@@ -2,7 +2,7 @@
         var makes = ['Chevy', 'GM', 'Fiat', 'SieMoCorp', 'Tucker'];
         var models = ['Cadillac', '500', 'Bel - Air', 'Taxi', 'Torpedo'];
         var years = [1955, 1957, 1948, 1954, 1961];
-        var colors = ['czerwony', 'niebieski', 'jasnobr􀃈 zowy', '􀄝􀃶􀃯ty', 'bia􀃯 y'];
+        var colors = ['red', 'blue', 'light-brown', 'yellow', 'white'];
         var convertible = [true, false];
         var rand1 = Math.floor(Math.random() * makes.length);
         var rand2 = Math.floor(Math.random() * models.length);
@@ -23,8 +23,8 @@
     }
 
     function displayCar(car) {
-        console.log('Twoim nowym samochodem jest ' + car.make + ' ' +
-            car.model + 'z roku ' + car.year);
+        console.log('Your new car is ' + car.make + ' ' +
+            car.model + ' from the year ' + car.year);
     }
     var carToSell = makeCar();
     displayCar(carToSell);
