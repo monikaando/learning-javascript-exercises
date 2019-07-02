@@ -16,7 +16,13 @@ var fiat = {
     },
     drive: function() {
         if (this.started) {
-            alert(this.make + " " + this.model + " making sound: brum wrrrr!");
+            if (this.fuel > 0) {
+                alert(this.make + " " + this.model + " making sound: brum wrrrr!");
+                this.fuel = this.fuel - 1;
+            } else {
+                alert("Ups! The tank is empty.");
+                this.stop();
+            }
         } else {
             alert("First, you should start the engine.");
         }
