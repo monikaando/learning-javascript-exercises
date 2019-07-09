@@ -4,10 +4,16 @@
 <head>
     <meta charset='utf-8'>
     <title>Planets</title>
+    <style>
+        .redtext {
+            color: red;
+        }
+    </style>
     <script>
         function init() {
             var planet = document.getElementById('greenplanet');
             planet.innerHTML = 'Red Alarm: We are on the war!';
+            planet.setAttribute('class', 'redtext');
         }
         window.onload = init;
     </script>
