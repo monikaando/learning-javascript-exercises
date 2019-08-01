@@ -35,5 +35,5 @@ function lieDetectorTest() {
 var numberOfLies = lieDetectorTest();
 console.log('You lied ' + numberOfLies + ' times!');
 if (numberOfLies >= 3) {
-    console.log('Guilty!');
+    console.log('Guilty!!!');
 }
